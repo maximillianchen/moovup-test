@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		504601AD2C919D4000FCC20A /* moovuptestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504601AC2C919D4000FCC20A /* moovuptestApp.swift */; };
-		504601AF2C919D4000FCC20A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504601AE2C919D4000FCC20A /* ContentView.swift */; };
+		504601AF2C919D4000FCC20A /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504601AE2C919D4000FCC20A /* TabsView.swift */; };
 		504601B12C919D4100FCC20A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504601B02C919D4100FCC20A /* Assets.xcassets */; };
 		504601B42C919D4100FCC20A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504601B32C919D4100FCC20A /* Preview Assets.xcassets */; };
 		504601BE2C919D4100FCC20A /* moovuptestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504601BD2C919D4100FCC20A /* moovuptestTests.swift */; };
@@ -17,6 +17,16 @@
 		504601E72C91A9E100FCC20A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 504601E62C91A9E100FCC20A /* Alamofire */; };
 		504601EE2C92C79800FCC20A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504601ED2C92C79800FCC20A /* ListView.swift */; };
 		504601F12C92C7B800FCC20A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504601F02C92C7B800FCC20A /* MapView.swift */; };
+		504601F32C92CB4800FCC20A /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504601F22C92CB4800FCC20A /* PeopleViewModel.swift */; };
+		504601F42C92CB4800FCC20A /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504601F22C92CB4800FCC20A /* PeopleViewModel.swift */; };
+		504601F82C92CF3500FCC20A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504601F72C92CF3500FCC20A /* Users.swift */; };
+		504601F92C92CF3500FCC20A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504601F72C92CF3500FCC20A /* Users.swift */; };
+		504601FB2C92D26D00FCC20A /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504601FA2C92D26D00FCC20A /* ApiServices.swift */; };
+		504601FC2C92D26D00FCC20A /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504601FA2C92D26D00FCC20A /* ApiServices.swift */; };
+		504602012C92D3DE00FCC20A /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602002C92D3DE00FCC20A /* BundleExtension.swift */; };
+		504602022C92D3DE00FCC20A /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602002C92D3DE00FCC20A /* BundleExtension.swift */; };
+		5046020D2C92EB9C00FCC20A /* TabsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046020C2C92EB9C00FCC20A /* TabsViewModel.swift */; };
+		5046020E2C92EB9C00FCC20A /* TabsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046020C2C92EB9C00FCC20A /* TabsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +49,7 @@
 /* Begin PBXFileReference section */
 		504601A92C919D4000FCC20A /* moovuptest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moovuptest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		504601AC2C919D4000FCC20A /* moovuptestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moovuptestApp.swift; sourceTree = "<group>"; };
-		504601AE2C919D4000FCC20A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		504601AE2C919D4000FCC20A /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		504601B02C919D4100FCC20A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		504601B32C919D4100FCC20A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		504601B92C919D4100FCC20A /* moovuptestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moovuptestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +59,12 @@
 		504601C92C919D4100FCC20A /* moovuptestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moovuptestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		504601ED2C92C79800FCC20A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		504601F02C92C7B800FCC20A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		504601F22C92CB4800FCC20A /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		504601F72C92CF3500FCC20A /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		504601FA2C92D26D00FCC20A /* ApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
+		504602002C92D3DE00FCC20A /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		504602032C92D4F500FCC20A /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
+		5046020C2C92EB9C00FCC20A /* TabsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +116,12 @@
 		504601AB2C919D4000FCC20A /* moovuptest */ = {
 			isa = PBXGroup;
 			children = (
-				504601AC2C919D4000FCC20A /* moovuptestApp.swift */,
-				504601AE2C919D4000FCC20A /* ContentView.swift */,
+				504602052C92D85A00FCC20A /* System */,
+				504601FD2C92D2EA00FCC20A /* Configs */,
 				504601E82C92C6E700FCC20A /* UI */,
 				504601EA2C92C75900FCC20A /* Services */,
+				504601F52C92CD3500FCC20A /* Models */,
+				504601FE2C92D39A00FCC20A /* Utilities */,
 				504601E92C92C71000FCC20A /* Resources */,
 				504601B22C919D4100FCC20A /* Preview Content */,
 			);
@@ -138,8 +156,11 @@
 		504601E82C92C6E700FCC20A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				504601AE2C919D4000FCC20A /* TabsView.swift */,
+				5046020C2C92EB9C00FCC20A /* TabsViewModel.swift */,
 				504601ED2C92C79800FCC20A /* ListView.swift */,
 				504601F02C92C7B800FCC20A /* MapView.swift */,
+				504601F22C92CB4800FCC20A /* PeopleViewModel.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -155,8 +176,57 @@
 		504601EA2C92C75900FCC20A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				504601FA2C92D26D00FCC20A /* ApiServices.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		504601F52C92CD3500FCC20A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				504601F62C92CD3E00FCC20A /* API */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		504601F62C92CD3E00FCC20A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				504601F72C92CF3500FCC20A /* Users.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		504601FD2C92D2EA00FCC20A /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				504602032C92D4F500FCC20A /* shared.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		504601FE2C92D39A00FCC20A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				504601FF2C92D3C500FCC20A /* Extension */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		504601FF2C92D3C500FCC20A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				504602002C92D3DE00FCC20A /* BundleExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		504602052C92D85A00FCC20A /* System */ = {
+			isa = PBXGroup;
+			children = (
+				504601AC2C919D4000FCC20A /* moovuptestApp.swift */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,9 +366,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				504601EE2C92C79800FCC20A /* ListView.swift in Sources */,
-				504601AF2C919D4000FCC20A /* ContentView.swift in Sources */,
+				504601FB2C92D26D00FCC20A /* ApiServices.swift in Sources */,
+				504601AF2C919D4000FCC20A /* TabsView.swift in Sources */,
 				504601F12C92C7B800FCC20A /* MapView.swift in Sources */,
+				504601F32C92CB4800FCC20A /* PeopleViewModel.swift in Sources */,
+				504601F82C92CF3500FCC20A /* Users.swift in Sources */,
 				504601AD2C919D4000FCC20A /* moovuptestApp.swift in Sources */,
+				5046020D2C92EB9C00FCC20A /* TabsViewModel.swift in Sources */,
+				504602012C92D3DE00FCC20A /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +381,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504602022C92D3DE00FCC20A /* BundleExtension.swift in Sources */,
 				504601BE2C919D4100FCC20A /* moovuptestTests.swift in Sources */,
+				504601F92C92CF3500FCC20A /* Users.swift in Sources */,
+				504601FC2C92D26D00FCC20A /* ApiServices.swift in Sources */,
+				5046020E2C92EB9C00FCC20A /* TabsViewModel.swift in Sources */,
+				504601F42C92CB4800FCC20A /* PeopleViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +417,7 @@
 /* Begin XCBuildConfiguration section */
 		504601CB2C919D4100FCC20A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504602032C92D4F500FCC20A /* shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -400,6 +481,7 @@
 		};
 		504601CC2C919D4100FCC20A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504602032C92D4F500FCC20A /* shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -465,11 +547,13 @@
 				DEVELOPMENT_TEAM = 9A6R94HNZW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = moovuptest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -499,11 +583,13 @@
 				DEVELOPMENT_TEAM = 9A6R94HNZW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = moovuptest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

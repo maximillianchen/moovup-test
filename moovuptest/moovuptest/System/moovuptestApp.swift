@@ -12,7 +12,7 @@ struct moovuptestApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabsView(viewModel: TabsViewModel())
                 .colorScheme(.light)
         }
     }
