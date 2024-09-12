@@ -8,17 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var selectedIndex: Int = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        TabView(selection: $selectedIndex) {
+            NavigationStack() {
+                ListView()
+            }
+            .tabItem {
+                Label("People", systemImage: "person.fill")
+            }
+            .tag(0)
+            
+            NavigationStack() {
+                MapView()
+            }
+            .tabItem {
+                Label("Map", systemImage: "house.fill")
+            }
+            .tag(1)
+            
         }
-        .padding()
+        
     }
-}
-
-#Preview {
-    ContentView()
 }
