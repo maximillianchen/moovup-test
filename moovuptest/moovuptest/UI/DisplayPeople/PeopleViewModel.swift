@@ -16,7 +16,7 @@ class PeopleViewModel: ObservableObject {
     @Published var users: Users?
     
     init() {
-        
+        fetchUsers()
     }
     
     func fetchUsers() {
