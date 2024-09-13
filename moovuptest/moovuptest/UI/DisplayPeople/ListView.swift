@@ -12,7 +12,10 @@ struct ListView: View {
     @ObservedObject var viewModel: PeopleViewModel
     
     var body: some View {
-        contentView()
+        VStack {
+            contentView()
+        }
+        .navigate(with: $viewModel.navigation)
     }
     
     @ViewBuilder func contentView() -> some View {
@@ -24,7 +27,7 @@ struct ListView: View {
                         PeopleItemView(user: user)
                             .listRowInsets(EdgeInsets())
                             .onTapGesture {
-                                
+                                viewModel.showPeopleDetails(user: user)
                             }
                     }
                 }

@@ -9,10 +9,11 @@ import Foundation
 import Combine
 import Alamofire
 
-class PeopleViewModel: ObservableObject {
+class PeopleViewModel: ObservableObject, ObjectIdentifierHashable {
     
     var cancelBag = Set<AnyCancellable>()
     
+    @Published var navigation: Navigation?
     @Published var users: Users?
     
     init() {
@@ -34,6 +35,13 @@ class PeopleViewModel: ObservableObject {
             )
             .store(in: &cancelBag)
         
+    }
+    
+    func showPeopleDetails(user: User) {
+        navigation = .init(
+            action: .push,
+            targetViewModel: .peopleDetails(viewModel: .init(user: user))
+        )
     }
     
 }

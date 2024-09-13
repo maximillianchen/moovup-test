@@ -51,8 +51,8 @@ struct PeopleItemView: View {
                     .stroke(.secondary, lineWidth: 0.5)
             )
         }
+        .contentShape(Rectangle())
         .padding(vertical: 10, horizontal: 10)
-        
         
     }
 }

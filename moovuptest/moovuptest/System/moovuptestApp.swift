@@ -12,8 +12,10 @@ struct moovuptestApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TabsView(viewModel: TabsViewModel())
-                .colorScheme(.light)
+            ModalPresentationProvider {
+                TabsView(viewModel: TabsViewModel())
+                    .colorScheme(.light)
+            }
         }
     }
     

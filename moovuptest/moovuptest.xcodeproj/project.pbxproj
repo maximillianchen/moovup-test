@@ -30,6 +30,16 @@
 		504602122C94063F00FCC20A /* PeopleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602112C94063F00FCC20A /* PeopleItemView.swift */; };
 		504602152C940B4900FCC20A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 504602142C940B4900FCC20A /* SDWebImageSwiftUI */; };
 		504602172C941AFD00FCC20A /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602162C941AFD00FCC20A /* ViewExtension.swift */; };
+		5046021A2C9484CD00FCC20A /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602192C9484CD00FCC20A /* Navigation.swift */; };
+		5046021C2C94851B00FCC20A /* Navigation+TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046021B2C94851B00FCC20A /* Navigation+TargetView.swift */; };
+		5046021E2C94856500FCC20A /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046021D2C94856500FCC20A /* NavigationModifier.swift */; };
+		504602212C94862100FCC20A /* PeopleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602202C94862100FCC20A /* PeopleDetailsView.swift */; };
+		504602232C94863A00FCC20A /* PeopleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602222C94863A00FCC20A /* PeopleDetailsViewModel.swift */; };
+		504602252C94899200FCC20A /* ObjectIdentifierHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602242C94899200FCC20A /* ObjectIdentifierHashable.swift */; };
+		504602272C948A1100FCC20A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602262C948A1100FCC20A /* View+Extension.swift */; };
+		5046022A2C948AD400FCC20A /* ModalPresentationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602292C948AD400FCC20A /* ModalPresentationProvider.swift */; };
+		5046022E2C948CBD00FCC20A /* ModalModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046022D2C948CBD00FCC20A /* ModalModifier.swift */; };
+		504602312C948DD700FCC20A /* ModalPresentationProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602302C948DD700FCC20A /* ModalPresentationProviderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +80,16 @@
 		5046020C2C92EB9C00FCC20A /* TabsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsViewModel.swift; sourceTree = "<group>"; };
 		504602112C94063F00FCC20A /* PeopleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleItemView.swift; sourceTree = "<group>"; };
 		504602162C941AFD00FCC20A /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		504602192C9484CD00FCC20A /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		5046021B2C94851B00FCC20A /* Navigation+TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigation+TargetView.swift"; sourceTree = "<group>"; };
+		5046021D2C94856500FCC20A /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
+		504602202C94862100FCC20A /* PeopleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailsView.swift; sourceTree = "<group>"; };
+		504602222C94863A00FCC20A /* PeopleDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailsViewModel.swift; sourceTree = "<group>"; };
+		504602242C94899200FCC20A /* ObjectIdentifierHashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectIdentifierHashable.swift; sourceTree = "<group>"; };
+		504602262C948A1100FCC20A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		504602292C948AD400FCC20A /* ModalPresentationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationProvider.swift; sourceTree = "<group>"; };
+		5046022D2C948CBD00FCC20A /* ModalModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalModifier.swift; sourceTree = "<group>"; };
+		504602302C948DD700FCC20A /* ModalPresentationProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationProviderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +184,7 @@
 			children = (
 				504601AE2C919D4000FCC20A /* TabsView.swift */,
 				5046020C2C92EB9C00FCC20A /* TabsViewModel.swift */,
+				504602282C948AC300FCC20A /* Common */,
 				504602102C9405AC00FCC20A /* DisplayPeople */,
 			);
 			path = UI;
@@ -222,6 +243,8 @@
 			children = (
 				504602002C92D3DE00FCC20A /* BundleExtension.swift */,
 				504602162C941AFD00FCC20A /* ViewExtension.swift */,
+				504602242C94899200FCC20A /* ObjectIdentifierHashable.swift */,
+				504602262C948A1100FCC20A /* View+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -245,12 +268,51 @@
 		504602102C9405AC00FCC20A /* DisplayPeople */ = {
 			isa = PBXGroup;
 			children = (
+				5046021F2C94860200FCC20A /* PeopleDetails */,
 				5046020F2C9404EE00FCC20A /* Cell */,
 				504601ED2C92C79800FCC20A /* ListView.swift */,
 				504601F02C92C7B800FCC20A /* MapView.swift */,
 				504601F22C92CB4800FCC20A /* PeopleViewModel.swift */,
 			);
 			path = DisplayPeople;
+			sourceTree = "<group>";
+		};
+		504602182C9484B600FCC20A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				504602192C9484CD00FCC20A /* Navigation.swift */,
+				5046021B2C94851B00FCC20A /* Navigation+TargetView.swift */,
+				5046021D2C94856500FCC20A /* NavigationModifier.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		5046021F2C94860200FCC20A /* PeopleDetails */ = {
+			isa = PBXGroup;
+			children = (
+				504602202C94862100FCC20A /* PeopleDetailsView.swift */,
+				504602222C94863A00FCC20A /* PeopleDetailsViewModel.swift */,
+			);
+			path = PeopleDetails;
+			sourceTree = "<group>";
+		};
+		504602282C948AC300FCC20A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5046022F2C948CE900FCC20A /* ModalPresentation */,
+				504602182C9484B600FCC20A /* Navigation */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5046022F2C948CE900FCC20A /* ModalPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				504602292C948AD400FCC20A /* ModalPresentationProvider.swift */,
+				504602302C948DD700FCC20A /* ModalPresentationProviderViewModel.swift */,
+				5046022D2C948CBD00FCC20A /* ModalModifier.swift */,
+			);
+			path = ModalPresentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,14 +455,24 @@
 			files = (
 				504602122C94063F00FCC20A /* PeopleItemView.swift in Sources */,
 				504601EE2C92C79800FCC20A /* ListView.swift in Sources */,
+				5046021E2C94856500FCC20A /* NavigationModifier.swift in Sources */,
 				504601FB2C92D26D00FCC20A /* ApiServices.swift in Sources */,
+				5046021A2C9484CD00FCC20A /* Navigation.swift in Sources */,
 				504601AF2C919D4000FCC20A /* TabsView.swift in Sources */,
+				504602252C94899200FCC20A /* ObjectIdentifierHashable.swift in Sources */,
+				5046021C2C94851B00FCC20A /* Navigation+TargetView.swift in Sources */,
 				504601F12C92C7B800FCC20A /* MapView.swift in Sources */,
 				504601F32C92CB4800FCC20A /* PeopleViewModel.swift in Sources */,
 				504602172C941AFD00FCC20A /* ViewExtension.swift in Sources */,
 				504601F82C92CF3500FCC20A /* Users.swift in Sources */,
 				504601AD2C919D4000FCC20A /* moovuptestApp.swift in Sources */,
+				5046022E2C948CBD00FCC20A /* ModalModifier.swift in Sources */,
+				504602312C948DD700FCC20A /* ModalPresentationProviderViewModel.swift in Sources */,
+				504602212C94862100FCC20A /* PeopleDetailsView.swift in Sources */,
 				5046020D2C92EB9C00FCC20A /* TabsViewModel.swift in Sources */,
+				5046022A2C948AD400FCC20A /* ModalPresentationProvider.swift in Sources */,
+				504602232C94863A00FCC20A /* PeopleDetailsViewModel.swift in Sources */,
+				504602272C948A1100FCC20A /* View+Extension.swift in Sources */,
 				504602012C92D3DE00FCC20A /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
