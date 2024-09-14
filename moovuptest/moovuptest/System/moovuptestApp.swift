@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct moovuptestApp: App {
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
             ModalPresentationProvider {

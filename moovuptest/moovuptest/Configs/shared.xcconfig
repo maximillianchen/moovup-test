@@ -11,3 +11,5 @@
 rest_protocol = https
 api_host = api.json-generator.com
 api_token = b2atclr0nk1po45amg305meheqf4xrjt9a1bo410
+
+google_map_token = AIzaSyDmXb8SAdFdZkmeDRRibtNvetAoE5w5NNQ

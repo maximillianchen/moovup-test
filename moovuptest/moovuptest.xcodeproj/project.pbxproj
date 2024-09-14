@@ -40,6 +40,9 @@
 		5046022A2C948AD400FCC20A /* ModalPresentationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602292C948AD400FCC20A /* ModalPresentationProvider.swift */; };
 		5046022E2C948CBD00FCC20A /* ModalModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046022D2C948CBD00FCC20A /* ModalModifier.swift */; };
 		504602312C948DD700FCC20A /* ModalPresentationProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602302C948DD700FCC20A /* ModalPresentationProviderViewModel.swift */; };
+		504602342C949B4F00FCC20A /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 504602332C949B4F00FCC20A /* GoogleMaps */; };
+		504602362C949BF800FCC20A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602352C949BF800FCC20A /* AppDelegate.swift */; };
+		5046023B2C94A0D800FCC20A /* GoogleMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046023A2C94A0D800FCC20A /* GoogleMapsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,8 @@
 		504602292C948AD400FCC20A /* ModalPresentationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationProvider.swift; sourceTree = "<group>"; };
 		5046022D2C948CBD00FCC20A /* ModalModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalModifier.swift; sourceTree = "<group>"; };
 		504602302C948DD700FCC20A /* ModalPresentationProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationProviderViewModel.swift; sourceTree = "<group>"; };
+		504602352C949BF800FCC20A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5046023A2C94A0D800FCC20A /* GoogleMapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +104,7 @@
 			files = (
 				504602152C940B4900FCC20A /* SDWebImageSwiftUI in Frameworks */,
 				504601E72C91A9E100FCC20A /* Alamofire in Frameworks */,
+				504602342C949B4F00FCC20A /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +191,7 @@
 				504601AE2C919D4000FCC20A /* TabsView.swift */,
 				5046020C2C92EB9C00FCC20A /* TabsViewModel.swift */,
 				504602282C948AC300FCC20A /* Common */,
+				504602372C949D2300FCC20A /* Map */,
 				504602102C9405AC00FCC20A /* DisplayPeople */,
 			);
 			path = UI;
@@ -253,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				504601AC2C919D4000FCC20A /* moovuptestApp.swift */,
+				504602352C949BF800FCC20A /* AppDelegate.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -315,6 +323,14 @@
 			path = ModalPresentation;
 			sourceTree = "<group>";
 		};
+		504602372C949D2300FCC20A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5046023A2C94A0D800FCC20A /* GoogleMapsView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,6 +350,7 @@
 			packageProductDependencies = (
 				504601E62C91A9E100FCC20A /* Alamofire */,
 				504602142C940B4900FCC20A /* SDWebImageSwiftUI */,
+				504602332C949B4F00FCC20A /* GoogleMaps */,
 			);
 			productName = moovuptest;
 			productReference = 504601A92C919D4000FCC20A /* moovuptest.app */;
@@ -410,6 +427,7 @@
 			packageReferences = (
 				504601E52C91A9E100FCC20A /* XCRemoteSwiftPackageReference "Alamofire" */,
 				504602132C940B4900FCC20A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				504602322C949B4E00FCC20A /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
 			);
 			productRefGroup = 504601AA2C919D4000FCC20A /* Products */;
 			projectDirPath = "";
@@ -453,6 +471,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5046023B2C94A0D800FCC20A /* GoogleMapsView.swift in Sources */,
+				504602362C949BF800FCC20A /* AppDelegate.swift in Sources */,
 				504602122C94063F00FCC20A /* PeopleItemView.swift in Sources */,
 				504601EE2C92C79800FCC20A /* ListView.swift in Sources */,
 				5046021E2C94856500FCC20A /* NavigationModifier.swift in Sources */,
@@ -644,7 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"moovuptest/Preview Content\"";
-				DEVELOPMENT_TEAM = 9A6R94HNZW;
+				DEVELOPMENT_TEAM = GCW5PJKPNB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = moovuptest/Info.plist;
@@ -680,7 +700,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"moovuptest/Preview Content\"";
-				DEVELOPMENT_TEAM = 9A6R94HNZW;
+				DEVELOPMENT_TEAM = GCW5PJKPNB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = moovuptest/Info.plist;
@@ -842,6 +862,14 @@
 				minimumVersion = 3.1.2;
 			};
 		};
+		504602322C949B4E00FCC20A /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -854,6 +882,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 504602132C940B4900FCC20A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		504602332C949B4F00FCC20A /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 504602322C949B4E00FCC20A /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

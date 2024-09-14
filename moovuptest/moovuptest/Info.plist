@@ -8,6 +8,8 @@
 	<string>$(api_host)</string>
 	<key>api_token</key>
 	<string>$(api_token)</string>
+	<key>google_map_token</key>
+	<string>$(google_map_token)</string>
 	<key>rest_protocol</key>
 	<string>$(rest_protocol)</string>
 </dict>

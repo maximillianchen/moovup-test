@@ -21,4 +21,8 @@ extension Bundle {
         main.infoDictionary!["api_token"] as! String
     }
     
+    static var mapToken: String {
+        main.infoDictionary!["google_map_token"] as! String
+    }
+    
 }

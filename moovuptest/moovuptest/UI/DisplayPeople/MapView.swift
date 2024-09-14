@@ -6,11 +6,21 @@
 //
 
 import SwiftUI
+import GoogleMaps
 
 struct MapView: View {
     
+    @State private var totalDistance: CLLocationDistance = 0.0
+    
     var body: some View {
-        Text("MapView")
+        VStack {
+            
+            VStack {
+                GoogleMapsView()
+                    .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
+            }.edgesIgnoringSafeArea(.all)
+            
+        }
     }
     
 }
