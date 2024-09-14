@@ -16,7 +16,7 @@ struct MapView: View {
         VStack {
             
             VStack {
-                GoogleMapsView()
+                GoogleMapsView(lat: 22.2950243, lon: 114.1714876, name: "")
                     .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
             }.edgesIgnoringSafeArea(.all)
             

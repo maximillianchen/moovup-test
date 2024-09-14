@@ -39,7 +39,7 @@ class PeopleViewModel: ObservableObject, ObjectIdentifierHashable {
     
     func showPeopleDetails(user: User) {
         navigation = .init(
-            action: .push,
+            action: .fullScreenCover(config: .init(isStacked: true)),
             targetViewModel: .peopleDetails(viewModel: .init(user: user))
         )
     }

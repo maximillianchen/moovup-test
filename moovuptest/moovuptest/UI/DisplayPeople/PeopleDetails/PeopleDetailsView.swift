@@ -6,21 +6,64 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct PeopleDetailsView: View {
     
+    @Environment(\.presentationMode) var presentationMode
     @ObservedObject var viewModel: PeopleDetailsViewModel
     
     var body: some View {
-//        VStack {
-//            Text("user: \(viewModel.user?.name.last) \(viewModel.user?.name.first)")
-//        }
         
         VStack {
-            GoogleMapsView()
-                .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
+            GoogleMapsView(lat: viewModel.lat, lon: viewModel.lon, name: viewModel.name)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            
+            HStack(alignment: .top, spacing: 20) {
+                
+                if let imageUrl = viewModel.imageUrl {
+                    Color.clear
+                        .aspectRatio(contentMode: .fit)
+                        .overlay {
+                            WebImage(url: imageUrl)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 84, height: 84, alignment: .center)
+                                .contentShape(RoundedRectangle(cornerRadius: 8))
+                                .allowsHitTesting(false)
+                                .clipped()
+                        }
+                        .clipShape(Circle())
+                        .frame(maxHeight: 60)
+                }
+                
+                VStack(alignment: .center, spacing: 4) {
+                    Text(viewModel.name)
+                        .font(.system(size: 18, weight: .semibold))
+                        .lineLimit(1)
+                        .frame(maxWidth: .infinity, alignment: .topLeading)
+                    
+                    Text(viewModel.email)
+                        .font(.system(size: 18, weight: .semibold))
+                        .lineLimit(1)
+                        .frame(maxWidth: .infinity, alignment: .topLeading)
+                    
+                }
+                .frame(maxWidth: .infinity)
+                
+            }
+            .padding(vertical: 12, horizontal: 20)
+            
         }
-        .edgesIgnoringSafeArea(.all)
-        .navigationBarTitle("People Details")
+        .navigationTitle("People Details")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarItems(
+            leading:
+                Button {
+                    presentationMode.wrappedValue.dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
+                }
+        )
     }
 }
