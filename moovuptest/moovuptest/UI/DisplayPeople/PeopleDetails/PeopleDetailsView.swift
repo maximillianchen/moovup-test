@@ -16,8 +16,10 @@ struct PeopleDetailsView: View {
     var body: some View {
         
         VStack {
-            GoogleMapsView(lat: viewModel.lat, lon: viewModel.lon, name: viewModel.name)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            GoogleMapsView(
+                usersLocation: [UserLocation(name: viewModel.name, latitude: viewModel.lat, longitude: viewModel.lon)]
+            )
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             
             HStack(alignment: .top, spacing: 20) {
                 

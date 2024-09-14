@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ListView: View {
     
-    @ObservedObject var viewModel: PeopleViewModel
+    @ObservedObject var viewModel: ListViewModel
     
     var body: some View {
         VStack {

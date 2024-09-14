@@ -22,7 +22,7 @@ class PeopleDetailsViewModel: ObservableObject, ObjectIdentifierHashable {
         self.user = user
         
         imageUrl = URL(string: user.picture)
-        name = "\(user.name.last) \(user.name.first)"
+        name = "\(user.name.first) \(user.name.last)"
         email = user.email
         
         lat = user.location.latitude ?? 0

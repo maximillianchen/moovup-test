@@ -43,6 +43,8 @@
 		504602342C949B4F00FCC20A /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 504602332C949B4F00FCC20A /* GoogleMaps */; };
 		504602362C949BF800FCC20A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602352C949BF800FCC20A /* AppDelegate.swift */; };
 		5046023B2C94A0D800FCC20A /* GoogleMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046023A2C94A0D800FCC20A /* GoogleMapsView.swift */; };
+		504602452C95D6AC00FCC20A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602442C95D6AC00FCC20A /* ListViewModel.swift */; };
+		504602472C95DD2100FCC20A /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602462C95DD2100FCC20A /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		504602302C948DD700FCC20A /* ModalPresentationProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationProviderViewModel.swift; sourceTree = "<group>"; };
 		504602352C949BF800FCC20A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5046023A2C94A0D800FCC20A /* GoogleMapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsView.swift; sourceTree = "<group>"; };
+		504602442C95D6AC00FCC20A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		504602462C95DD2100FCC20A /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,10 +281,12 @@
 			isa = PBXGroup;
 			children = (
 				5046021F2C94860200FCC20A /* PeopleDetails */,
-				5046020F2C9404EE00FCC20A /* Cell */,
 				504601ED2C92C79800FCC20A /* ListView.swift */,
+				504602442C95D6AC00FCC20A /* ListViewModel.swift */,
 				504601F02C92C7B800FCC20A /* MapView.swift */,
+				504602462C95DD2100FCC20A /* MapViewModel.swift */,
 				504601F22C92CB4800FCC20A /* PeopleViewModel.swift */,
+				5046020F2C9404EE00FCC20A /* Cell */,
 			);
 			path = DisplayPeople;
 			sourceTree = "<group>";
@@ -477,6 +483,7 @@
 				504601EE2C92C79800FCC20A /* ListView.swift in Sources */,
 				5046021E2C94856500FCC20A /* NavigationModifier.swift in Sources */,
 				504601FB2C92D26D00FCC20A /* ApiServices.swift in Sources */,
+				504602472C95DD2100FCC20A /* MapViewModel.swift in Sources */,
 				5046021A2C9484CD00FCC20A /* Navigation.swift in Sources */,
 				504601AF2C919D4000FCC20A /* TabsView.swift in Sources */,
 				504602252C94899200FCC20A /* ObjectIdentifierHashable.swift in Sources */,
@@ -485,6 +492,7 @@
 				504601F32C92CB4800FCC20A /* PeopleViewModel.swift in Sources */,
 				504602172C941AFD00FCC20A /* ViewExtension.swift in Sources */,
 				504601F82C92CF3500FCC20A /* Users.swift in Sources */,
+				504602452C95D6AC00FCC20A /* ListViewModel.swift in Sources */,
 				504601AD2C919D4000FCC20A /* moovuptestApp.swift in Sources */,
 				5046022E2C948CBD00FCC20A /* ModalModifier.swift in Sources */,
 				504602312C948DD700FCC20A /* ModalPresentationProviderViewModel.swift in Sources */,

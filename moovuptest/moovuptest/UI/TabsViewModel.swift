@@ -17,6 +17,7 @@ class TabsViewModel: ObservableObject {
     
     @Published var selectedtab: Tab = .list
     
-    let peopleViewModel: PeopleViewModel = .init()
+    let listViewModel: ListViewModel = .init()
+    let mapViewModel: MapViewModel = .init()
     
 }

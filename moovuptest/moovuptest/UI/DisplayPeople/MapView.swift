@@ -10,16 +10,19 @@ import GoogleMaps
 
 struct MapView: View {
     
-    @State private var totalDistance: CLLocationDistance = 0.0
+    @ObservedObject var viewModel: MapViewModel
     
     var body: some View {
         VStack {
-            
-            VStack {
-                GoogleMapsView(lat: 22.2950243, lon: 114.1714876, name: "")
-                    .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
-            }.edgesIgnoringSafeArea(.all)
-            
+            if !viewModel.usersLocation.isEmpty {
+                VStack {
+                    GoogleMapsView(usersLocation: viewModel.usersLocation)
+                        .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
+                }
+            }
+        }
+        .onAppear {
+            viewModel.getPeopleOnMap()
         }
     }
     

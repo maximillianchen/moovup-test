@@ -15,7 +15,7 @@ struct TabsView: View {
         
         TabView(selection: $viewModel.selectedtab) {
             NavigationStack() {
-                ListView(viewModel: viewModel.peopleViewModel)
+                ListView(viewModel: viewModel.listViewModel)
             }
             .tabItem {
                 Label("People", systemImage: "person.fill")
@@ -23,7 +23,7 @@ struct TabsView: View {
             .tag(Tab.list)
             
             NavigationStack() {
-                MapView()
+                MapView(viewModel: viewModel.mapViewModel)
             }
             .tabItem {
                 Label("Map", systemImage: "house.fill")

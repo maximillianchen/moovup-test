@@ -35,7 +35,7 @@ struct PeopleItemView: View {
                 }
                 
                 VStack(alignment: .center, spacing: 0) {
-                    Text("\(user.name.last) \(user.name.first)")
+                    Text("\(user.name.first) \(user.name.last)")
                         .font(.system(size: 18, weight: .semibold))
                         .lineLimit(1)
                         .frame(maxWidth: .infinity, alignment: .topLeading)

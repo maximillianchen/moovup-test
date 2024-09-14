@@ -9,11 +9,18 @@ import Foundation
 import Combine
 import Alamofire
 
-class PeopleViewModel: ObservableObject, ObjectIdentifierHashable {
+protocol PeopleViewModelImpl {
+    
+    var users: Users? { get }
+    var cancelBag: Set<AnyCancellable> { get set }
+    func fetchUsers()
+    
+}
+
+class PeopleViewModel: ObservableObject, PeopleViewModelImpl {
     
     var cancelBag = Set<AnyCancellable>()
     
-    @Published var navigation: Navigation?
     @Published var users: Users?
     
     init() {
@@ -35,13 +42,6 @@ class PeopleViewModel: ObservableObject, ObjectIdentifierHashable {
             )
             .store(in: &cancelBag)
         
-    }
-    
-    func showPeopleDetails(user: User) {
-        navigation = .init(
-            action: .fullScreenCover(config: .init(isStacked: true)),
-            targetViewModel: .peopleDetails(viewModel: .init(user: user))
-        )
     }
     
 }

@@ -8,32 +8,43 @@
 import SwiftUI
 import GoogleMaps
 
+struct UserLocation: Codable {
+    let name: String
+    let latitude: Double
+    let longitude: Double
+}
+
 struct GoogleMapsView: UIViewRepresentable {
     
-    private let zoom: Float = 14.0
-    private var latitude: CGFloat
-    private var longitude: CGFloat
-    private var markerTitle: String = ""
+    private let zoom: Float = 12.0
     
-    init(lat: CGFloat, lon: CGFloat, name: String) {
-        latitude = lat
-        longitude = lon
-        markerTitle = name
+    private var usersLocation: [UserLocation] = []
+    
+    init(usersLocation: [UserLocation]) {
+        self.usersLocation = usersLocation
     }
     
     func makeUIView(context: Self.Context) -> GMSMapView {
         
-        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: zoom)
+        let camera = GMSCameraPosition.camera(
+            withLatitude: usersLocation.first?.latitude ?? 0,
+            longitude: usersLocation.first?.longitude ?? 0,
+            zoom: zoom
+        )
         
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.camera = camera
         
-        // add marker
-        let mapCenter = CLLocationCoordinate2DMake(mapView.camera.target.latitude, mapView.camera.target.longitude)
-        let marker = GMSMarker(position: mapCenter)
-        marker.title = markerTitle
-        
-        marker.map = mapView
+        // Add marker
+        if !usersLocation.isEmpty {
+            usersLocation.forEach {
+                let location = CLLocationCoordinate2DMake($0.latitude, $0.longitude)
+                // print("location: \(location)")
+                let marker = GMSMarker(position: location)
+                marker.title = $0.name
+                marker.map = mapView
+            }
+        }
         
         return mapView
     }
