@@ -19,10 +19,10 @@ struct ListView: View {
     }
     
     @ViewBuilder func contentView() -> some View {
-        if let items = viewModel.users, items.count > 0 {
+        if !viewModel.users.isEmpty {
             ScrollView {
                 LazyVStack(spacing: 0) {
-                    ForEach(Array(items.enumerated()), id: \.offset) { _, user in
+                    ForEach(Array(viewModel.users.enumerated()), id: \.offset) { _, user in
                         
                         PeopleItemView(user: user)
                             .listRowInsets(EdgeInsets())

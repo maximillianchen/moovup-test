@@ -11,7 +11,7 @@ import Alamofire
 
 protocol PeopleViewModelImpl {
     
-    var users: Users? { get }
+    var users: [User] { get }
     var cancelBag: Set<AnyCancellable> { get set }
     func fetchUsers()
     
@@ -21,7 +21,7 @@ class PeopleViewModel: ObservableObject, PeopleViewModelImpl {
     
     var cancelBag = Set<AnyCancellable>()
     
-    @Published var users: Users?
+    @Published var users = [User]()
     
     init() {
         fetchUsers()

@@ -10,7 +10,7 @@ import Combine
 
 class MapViewModel: PeopleViewModel, ObjectIdentifierHashable {
     
-    @Published var usersLocation: [UserLocation] = []
+    @Published var usersLocation = [UserLocation]()
     
     override init() {
         super.init()
@@ -19,7 +19,7 @@ class MapViewModel: PeopleViewModel, ObjectIdentifierHashable {
     
     func getPeopleOnMap() {
         
-        if let users = users {
+        if !users.isEmpty {
             
             usersLocation = users.filter { $0.location.latitude != nil && $0.location.longitude != nil }
                 .compactMap {
