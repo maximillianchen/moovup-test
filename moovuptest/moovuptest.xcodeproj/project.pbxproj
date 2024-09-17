@@ -44,6 +44,7 @@
 		504602452C95D6AC00FCC20A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602442C95D6AC00FCC20A /* ListViewModel.swift */; };
 		504602472C95DD2100FCC20A /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602462C95DD2100FCC20A /* MapViewModel.swift */; };
 		504602492C973E0700FCC20A /* TestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504602482C973E0700FCC20A /* TestCaseExtension.swift */; };
+		5046024F2C9846DA00FCC20A /* QuestionOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046024E2C9846DA00FCC20A /* QuestionOneTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		504602442C95D6AC00FCC20A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		504602462C95DD2100FCC20A /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		504602482C973E0700FCC20A /* TestCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCaseExtension.swift; sourceTree = "<group>"; };
+		5046024E2C9846DA00FCC20A /* QuestionOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOneTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			children = (
 				504601BD2C919D4100FCC20A /* moovuptestTests.swift */,
 				504602482C973E0700FCC20A /* TestCaseExtension.swift */,
+				5046024E2C9846DA00FCC20A /* QuestionOneTests.swift */,
 			);
 			path = moovuptestTests;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				504602022C92D3DE00FCC20A /* BundleExtension.swift in Sources */,
 				504601BE2C919D4100FCC20A /* moovuptestTests.swift in Sources */,
 				504601F92C92CF3500FCC20A /* Users.swift in Sources */,
+				5046024F2C9846DA00FCC20A /* QuestionOneTests.swift in Sources */,
 				504601FC2C92D26D00FCC20A /* ApiServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
